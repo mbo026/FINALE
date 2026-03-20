@@ -1,0 +1,76 @@
+body {
+    font-family: Arial;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.boite {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 40px;
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 26px;
+}
+
+b {
+    font-size: 14px;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 0 10px;
+    font-size: 14px;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+.ligne {
+    display: flex;
+    gap: 10px;
+}
+
+.ligne input {
+    width: 200px;
+}
+
+.prix {
+    text-align: center;
+    font-size: 22px;
+}
+
+button {
+    width: 400px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    
+   
+}
+
+button:hover {
+    background-color: #333;
+}
+
+a {
+    color: black; /* couleur par defaut */
+    text-decoration: none; /* enlever la barre sous les lien */
+}
+
+a:visited {
+    color: black;  /* couleur par defaut */
+}

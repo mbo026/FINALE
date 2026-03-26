@@ -1,0 +1,179 @@
+body {
+    
+    display: flex;/* active flexbox pour centrer facilement les éléments */
+    justify-content: center; /* centre horizontalement */
+    flex-direction: column; /* empile les éléments verticalement */
+    align-items: center; /* centre verticalement */
+    background: #ffffff; /* couleur de fond de base */
+    font-family: Arial; /* police du site */
+    min-height: 100vh; /* prend toute la hauteur de l'écran */
+    margin: 0; /* enlève les marges par défaut */
+    gap: 10px; /* espace entre les éléments */
+
+    background-image: url('1000_F_675169004_pMNgVhWiVspHLzhsmHsO08F7rr7OpDNb.jpg'); /* image de fond */
+    background-size: cover; /* l'image couvre tout l'écran */
+    background-position: center; /* centre l'image */
+    background-repeat: no-repeat; /* évite la répétition */
+
+    
+}
+ 
+.gros-titre {
+    display: flex; /* permet de centrer le texte */
+    font-size: 54px; /* taille du titre */
+    margin: 35px; /* espace autour */
+    justify-content: center; /* centre horizontalement */
+    align-items: center; /* centre verticalement */
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255); /* contour blanc du texte */
+    color: rgba(0, 0, 0, 0.9); /* couleur du texte */
+}
+ 
+.box1 {
+    display: grid; /* utilise grid pour organiser les blocs */
+    grid-template-columns: repeat(3, 420px); /* 3 colonnes fixes */
+    gap: 30px; /* espace entre les blocs */
+
+}
+ 
+.option1 {
+    height: 520px; /* hauteur du bloc */
+    border-radius: 12px; /* coins arrondis */
+    border: 2px solid black; /* bordure */
+    display: flex; /* flex pour organiser le contenu */
+    flex-direction: column; /* contenu vertical */
+    justify-content: flex-start; /* commence en haut */
+    align-items: center; /* centre horizontal */
+    background-color: rgba(255, 255, 255, 0.7); /* fond semi-transparent */
+    overflow: hidden; /* cache ce qui dépasse */
+    
+}
+.option2{
+    
+    height: 520px;
+    border-radius: 12px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    overflow: hidden; /* évite les débordements */
+}
+ .option3{
+    height: 520px;
+    border-radius: 12px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+     overflow: hidden; /* sert à cacher ce qui dépasse */
+ }
+
+/* animation au survol */
+.option1:hover{
+    animation: rotate 0.5s ease-in-out forwards;
+
+}
+.option2:hover{
+    animation: rotate 0.5s ease-in-out forwards;
+}
+
+.option3:hover{
+    animation: rotate 0.5s ease-in-out forwards;
+}
+
+/* animation de retour à l'état normal */
+.option1{
+    animation: rotate2 0.5s ease-in-out forwards;
+}
+.option2{
+    animation: rotate2 0.5s ease-in-out forwards;
+}
+.option3{
+    animation: rotate2 0.5s ease-in-out forwards;
+}
+
+/* animation qui incline légèrement la carte */
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg) translateY(0px); /* position normale */
+    }
+    100%{
+        transform: rotate(2deg) translateY(-10px); /* penché + remonte */
+    }
+}
+
+/* animation inverse (retour à la normale) */
+@keyframes rotate2{ 
+    0%{
+        transform: rotate(2deg) translateY(-10px);
+    }
+    100%{
+        transform: rotate(0deg) translateY(0px);
+    }
+}
+
+
+
+
+.price {
+    position: absolute; /* position libre dans le bloc parent */
+    bottom: 10px; /* collé en bas */
+    left: 40px; /* décalé à gauche */
+    font-size: 30px; /* taille du prix */
+}
+ 
+.desc {
+    position: absolute; /* position libre */
+    top: 305px; /* position verticale */
+    left: 10px; /* décalage à gauche */
+    font-size: 20px; /* taille texte */
+    color: #000000; /* couleur */
+}
+ 
+.btn {
+    height: 40px;
+    width: 90px;
+    position: absolute; /* position libre */
+    bottom: 60px; /* au-dessus du prix */
+    border-radius: 8px; /* coins arrondis */
+    background: black; /* couleur bouton */
+    color: white; /* texte blanc */
+    cursor: pointer; /* curseur main */
+    border: none; /* enlève bordure */
+    font-size: 14px;
+}
+ 
+.btn:hover {
+    background: #333; /* bouton plus clair au hover */
+}
+
+
+.btn-ret {
+    position: absolute;
+    right: 30px; /* en haut à droite */
+    top: 30px;
+    height: 45px;
+    width: 160px;        
+    border-radius: 50px; /* bouton arrondi (pill) */
+    background:  rgba(255, 255, 255, 0.7); /* fond semi-transparent */
+    color: white; /* texte blanc */
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center; /* centre texte verticalement */
+    justify-content: center; /* centre horizontalement */
+}
+
+/* style des liens */
+a {
+    color: rgb(255, 255, 255); /* couleur par défaut */
+    text-decoration: none; /* enlève le soulignement */
+}
+
+a:visited {
+    color: rgb(255, 255, 255);  /* même couleur après visite */
+}

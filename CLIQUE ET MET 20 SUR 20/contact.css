@@ -1,0 +1,76 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background-color: #fddfeb;
+}
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:white;
+}
+
+.menu-left{
+display:flex;
+gap:20px;
+align-items:center;
+}
+
+.rondchambé{
+border:1px solid #ddd;
+border-radius:20px;
+padding:4px 10px;
+}
+
+.icons{
+display:flex;
+gap:15px;
+}
+
+.image
+{
+height: 70px;
+width: 80px;
+}
+
+.header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+
+h1{
+    font-size:48px;
+    font-weight:900;
+    margin-bottom:20px;
+}
+
+.direction{
+    text-align:center;
+    padding:40px 20px;
+}
+
+h2{
+    font-size:40px;
+    font-weight:900;
+    margin-bottom:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:40px;
+}
+
+.cartes{
+    font-size:14px;
+}
+a {
+    color: black; /* couleur par defaut */
+    text-decoration: none; /* enlever la barre sous les lien */
+}
+
+a:visited {
+    color: black;  /* couleur par defaut */
+}

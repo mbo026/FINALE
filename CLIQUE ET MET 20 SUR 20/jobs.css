@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* c la police de caractere */
+    margin: 0; /* enlève la marquela qui est fais par defaut  */
+    padding: 0;
+    background: #ffeef8; /* couleur de fon */
+    color: #222;/*couleur du texte */
+}
+
+.page {
+    max-width: 960px; /* c la largeur au maximum genre */
+    margin: 0 auto; 
+    padding: 32px 16px;
+}
+
+header {
+    text-align: center; /* centre leetexte */
+    margin-bottom: 32px;/* c l'espace du bas */
+}
+
+header h1 {
+    font-size: 32px; /* taille du titre */
+    margin: 0;
+}
+
+header p {
+    margin: 8px auto 0;
+    max-width: 640px; /* limite la largeur */
+    line-height: 1.5; /*c l'espace entre les lignes */
+}
+
+.histoire {
+    background: #fff1fb;
+    border-radius: 12px; /* coin arrondis */
+    padding: 24px; /* espace de l'intérieur de la div */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);  /* c la petit ombre quil y a derierer  c important de la lécer si nn c moche  */
+}
+
+.histoire img {
+    display: block; /* permet de centrer */
+    max-width: 420px;
+    width: 100%;
+    margin: 24px auto;
+    border-radius: 12px;
+}
+
+.histoire p {
+    line-height: 1.7;
+    margin: 16px 0;
+}
+
+.lequip {
+    margin-top: 40px; /* espace mais au deessus */
+    text-align: center;
+}
+
+.lequip h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.notreequipe {
+    display: flex;  /* c pour activer le  flexbox */
+    gap: 24px;  /* espace entre les eléments */
+    flex-wrap: nowrap; /* la c pour pas quil y est de retour ligne */
+    justify-content: space-around; /* espace autour  */
+}
+
+.menbre1,
+.menbre2,
+.menbre3 {
+    background: #ffd6e6;
+    border-radius: 16px;
+    padding: 20px;
+    flex: 1; /* prend place égale genre tous espacer et la meme taille tt parteille quoi  */
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.25s; /* bas c l'animatyion du coup */
+}
+
+.menbre1:hover,
+.menbre2:hover,
+.menbre3:hover {
+    transform: translateY(-6px);/* animation */
+}
+
+.menbre1 img,
+.menbre2 img,
+.menbre3 img {
+    width: 140px; /* largeur de l'image */
+    height: 140px; /* pareillle mais avec la largeur de l image */
+    border-radius: 50%;
+    margin-top: 12px;
+    border: 4px solid rgba(255,255,255,0.85); /* c les countour  */
+    
+}
+
+.menbre1 h3,
+.menbre2 h3,
+.menbre3 h3 {
+    margin: 10px 0 6px;
+    font-size: 20px;
+}
+
+.menbre1 p,
+.menbre2 p,
+.menbre3 p {
+    margin: 6px 0 0;
+    line-height: 1.6;
+    opacity: 0.85; /* c pour sa sois impeux transparent */
+}
+
+footer {
+    background: rgba(255,214,230,0.8); /* fond */
+    border-radius: 16px;
+    padding: 32px 16px;
+    margin: 40px 0 16px;
+    text-align: center;
+    
+}
+
+.autre {
+    margin-bottom: 16px;
+}
+
+.autre a {
+    color: #ff2c6d; /* couleur du lien */
+    margin: 0 16px;
+    text-decoration: none; /*sa  enlève le  soulignement */
+    font-weight: 600; /* semi genre moite moite gras */
+    transition: color 0.2s;
+}
+
+.autre a:hover {
+    color: #d12c5a;
+    text-decoration: underline; /* souligne */
+}
+
+footer img {
+    height: 50px;
+    margin: 16px 0;
+}
+
+.mension {
+    margin: 16px 0 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.legal a {
+    color: #777;
+    margin: 0 8px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.legal a:hover {
+    text-decoration: underline; /* souligne aussi  */
+}
+
+
+a {
+   
+    color: black; 
+    text-decoration: none; 
+}
+
+a:visited {
+    color: black;    /* reste noir après  clic voila lers bebou pr les comentaire de jobsss */
+}

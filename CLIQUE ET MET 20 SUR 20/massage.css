@@ -1,0 +1,234 @@
+body{
+margin:0;
+background-color: #fddfeb;
+font-family:Arial, Helvetica, sans-serif; /* police d'écriture utilisée pour la page */
+}
+ 
+h1{
+margin: 20px; /* espace autour de tout les h1 dans le code */
+}
+
+/* Barre du haut (barre blanche du site) */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center; /* aligné les éléments du header verticalement au centre */
+padding:15px 40px; /* l'espace à intérieur du header */
+background:white;
+}
+ 
+.menu-left{
+display:flex;
+gap:20px; /* espace entre les éléments */
+align-items:center; 
+}
+ 
+.rondchambé{
+border:1px solid #ddd; /* bordure autour du truc grise */
+border-radius:20px;  /*les coins arrondis */
+padding:4px 10px;
+}
+ 
+/* Zone des icônes */
+.icons{
+display:flex; /* les icone sont alignées en ligne */
+gap:15px; /* espace entre les icônes */
+}
+ 
+.massages{
+height:90vh; /* hauteur = 90% de la hauteur de l'écran */
+display:flex;
+align-items:flex-end; /* le texte est placé en bas */
+color:white;
+}
+ 
+.massages img{
+position:absolute; /* l'image elle ce met vraiment dans tout la zone */
+width:100%;
+height:100%;
+z-index:-1; /* il sert a placer l'image dérriére le texte */
+}
+
+/* la couche sombre au dessus de l'image */
+.massages:after{
+content:""; /* obligatoire sinon la partie sombre n'apparait pas */
+position:absolute; /* la partie sombre ce met vraiment partout dans la zone au dessus de l'image */
+width:100%; /* largeur */
+height:100%; /* hauteur */
+background:rgba(0,0,0,0.45);
+z-index:-1; /* il sert a placer l'image dérriére le texte */
+}
+ 
+.massages-text{
+padding:60px; /* espace autour du texte */
+}
+ 
+.massages-text h1{
+font-size:48px; /* taille du texte du h1 dans la zone */
+}
+ 
+.text-couleur{
+font-size:14px;
+color:#ddd; /* gris clair */
+}
+ 
+/* mot en couleur dans le texte */
+.text-couleur span{
+color:#ff2c6d;
+}
+ 
+.taille {
+font-size: 50px;
+}
+ 
+.image
+{
+height: 70px;
+width: 80px;
+}
+ 
+ /* partie basse de la page */
+footer {
+    background-color: rgba(241, 122, 194);
+    color: white;
+    text-align: center; /* texte centré */
+    padding: 40px 20px; /* espace intérieur */
+    font-family: Arial, sans-serif;
+}
+/* liens dans le footer */
+.autre a {
+    color: white;
+    margin: 20px;/* espace entre les liens */
+}
+ 
+.Mentions  {
+    margin-bottom: 10px;
+}
+
+ /* section calendrier */
+.calendrier{
+display:flex; /* cartes alignées horizontalement */
+justify-content:center;
+gap:20px; /* espace entre elles */
+padding:40px;
+}
+ 
+.jour{
+width:180px;
+height:250px;
+background:#ffe6f0;
+border-radius:15px; /* les coins sont arrondis */
+border:2px solid #ff9ec6; /* bordure rose */
+padding:15px;
+display:flex;
+flex-direction:column; /* les jours en colonne */
+justify-content:space-between; /* espace entre les jours */
+transition: transform 0.25s; /* animation */
+}
+.jour:hover{
+    transform: translateY(-6px); /* la carte monte légèrement zehma animation */
+}
+    
+ 
+.jour h3{
+margin:0;
+color:#ff2c6d;
+}
+ 
+/* bouton pour prendre les rendez-vous */
+.rdv{
+background:#ff2c6d;
+color:white;
+border:none;
+border-radius:10px;
+padding:8px;
+cursor:pointer; /* curseur clique main*/
+}
+ 
+/* section article */
+.article{
+padding:40px;
+}
+ 
+.article h2{
+color:#ff7ab6;
+}
+ 
+.boutique {
+    background: #fff1fb;
+    border-radius: 18px;
+    padding: 32px 16px;
+    margin: 32px 0;
+}
+ 
+.boutique h2 {
+    text-align: center;
+    color: #ff5fa6;
+    margin-bottom: 24px;
+}
+ 
+.products {
+    display: flex;
+    flex-wrap: nowrap; /* ne passent pas à la ligne */
+    gap: 16px;
+    padding: 16px 0;
+}
+ 
+.product {
+    background: #ffd6e6;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+ 
+.product:hover {
+    transform: translateY(-4px);
+}
+ 
+.product img {
+    width: 100%;
+    height: 120px;
+    
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+ 
+.product-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product p {
+    margin: 8px 0;
+    color: #ff2c6d;
+}
+
+ /* bouton du produit */
+.product button {
+    background: #ff2c6d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition:  0.2s ease;
+}
+ 
+.product button:hover {
+    background: #d12c5a;
+}
+ 
+.video{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:40px;
+}
+ 
+/* les 4 vidéos à la fin */
+.video iframe{
+width:250px;
+height:450px;
+border-radius:10px;
+}
